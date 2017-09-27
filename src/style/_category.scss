@@ -1,0 +1,63 @@
+$borderRadius : 12px;
+.categoryText {
+  background-color: #eeeeee;
+  padding:30px 0;
+  margin:10px 0;
+  .title h1{
+    font-size:24px;
+    font-weight: bold;
+  }
+  .text {
+    font-size: 16px;
+  }
+}
+.blockCategory {
+  margin-top:10px;
+  &__left {
+    .badgeIcon {
+      float: right;
+    }
+    .titleList {
+      margin-bottom: 0;
+      .badgeIcon {
+        font-size:16px;
+        padding-top:8px;
+      }
+      a {
+        color: white;
+        font-size: 24px;
+        background-color: #008080;
+        border-radius: $borderRadius;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      a.borderBottom {
+        border-radius: $borderRadius;
+      }
+    }
+    .listCategory {
+      &__item {
+        &:first-child {
+          border-top: none;
+          border-radius: 0;
+        }
+        &:hover {
+          background-color: #20b2aa;
+          a {
+            color: white;
+          }
+          .badgeIcon {
+            display: none;
+          }
+        }
+        a {
+          display: block;
+          outline: none;
+          text-decoration: none;
+          color: #000;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
