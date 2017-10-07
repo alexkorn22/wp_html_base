@@ -10,7 +10,29 @@ $( document ).ready(function() {
             self.toggleClass('borderBottom');
         });
     })
+    caruselProductImage();
 });
+
+function caruselProductImage() {
+    $('.caruselImage').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        infinite: true,
+        asNavFor: '.caruselThumb'
+    });
+    $('.caruselThumb').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        asNavFor: '.caruselImage',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        infinite: true,
+    });
+}
 
 /*
     Custom

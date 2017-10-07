@@ -24,7 +24,7 @@
       background-color: inherit;
       color: $colorMainText;
     }
-    &.active {
+    &.active,&.current-menu-item {
       font-weight: bold;
     }
   }
@@ -43,6 +43,7 @@ footer {
   font-family: $fontBold;
   font-size: 22px;
   color: $colorMainText;
+  text-align: right;
 }
 .mainDescription {
   margin-top: 20px;
@@ -71,6 +72,16 @@ footer {
 .blockService {
   margin: 20px 0;
   min-height: 360px;
+  &:hover {
+    opacity: 0.8;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.78);
+  }
+  a {
+    color: #000;
+    &:hover {
+      text-decoration: none;
+    }
+  }
   .blockImg {
     display: flex;
     justify-content: center;

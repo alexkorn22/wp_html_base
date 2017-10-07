@@ -68,7 +68,7 @@ gulp.task('js:build', function () {
     gulp.src(path.src.js) 
         .pipe(rigger())
         .pipe(sourcemaps.init()) 
-        .pipe(uglify()) 
+        .pipe(uglify())
         .pipe(sourcemaps.write()) 
         .pipe(gulp.dest(path.build.js))
         .pipe(reload({stream: true}));
@@ -82,6 +82,8 @@ gulp.task('style:build', function () {
             outputStyle: 'compressed',
             sourceMap: true,
             errLogToConsole: true
+        }).on('error',function (error) {
+            console.log(error.toString())
         }))
         .pipe(prefixer())
         .pipe(cssmin())

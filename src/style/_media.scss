@@ -48,6 +48,17 @@
       font-size: 16px;
     }
   }
+  .blockProduct {
+    &__detail {
+      .nav-tabs {
+        li {
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -61,6 +72,13 @@
   .social {
     text-align: center;
   }
+  .blockCategory {
+    &__left {
+      .listCategory {
+        display: none;
+      }
+    }
+  }
 }
 
 /* Small Devices, Tablets */
@@ -71,6 +89,20 @@
       padding-left: 15px;
     }
   }
+  .blockProduct {
+    &__detail {
+      .nav-tabs {
+        display: block;
+        li {
+          width: 50%;
+          margin-top: 5px;
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -78,6 +110,24 @@
   .mainContacts {
     font-size: 14px;
     padding-top: 10px;
+    text-align: center;
+  }
+  .logo {
+    text-align: center;
+  }
+  .blockProduct {
+    &__detail {
+      .nav-tabs {
+        display: block;
+        li {
+          width: 100%;
+          margin-top: 5px;
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
   }
 }
 

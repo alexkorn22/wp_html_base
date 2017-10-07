@@ -1,0 +1,71 @@
+
+.blockProduct {
+  &__main {
+    h1 {
+      font-size: 30px;
+    }
+    &__span {
+      font-size: 18px;
+      font-family: $fontLight;
+      h3 {
+        font-size: 22px;
+        font-family: $font;
+      }
+    }
+  }
+  .slick-slide:focus {
+    outline: none;
+  }
+  .caruselImage {
+    margin-bottom: 10px;
+  }
+  .caruselThumb {
+    & > .slick-prev {
+      left: 10px;
+      z-index: 1;
+    }
+    & > .slick-next {
+      right: 10px;
+      z-index: 1;
+    }
+    img {
+      width: 100%;
+      padding: 5px;
+      border: 2px solid transparent;
+    }
+    .slick-current.slick-active img {
+      border-color:  $colorDarkGreen;
+    }
+  }
+  &__detail {
+    .nav-tabs {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: none;
+      margin:20px -5px 10px;
+      li {
+        margin-bottom: 0;
+        min-width: 20%;
+        text-align: center;
+        a, a:hover, a:focus {
+          font-size: 18px;
+          color: black;
+          margin: 0 5px;
+          border-radius: 7px;
+          border: 3px solid $colorDarkGreen;
+        }
+
+        a:hover,&.active>a {
+          background-color: $colorDarkGreen;
+          color: white;
+        }
+      }
+    }
+    .tab-content {
+      min-height: 450px;
+      h4 {
+        font-size: 24px;
+      }
+    }
+  }
+}
