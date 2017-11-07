@@ -23,6 +23,7 @@
     a:hover,a:focus {
       background-color: inherit;
       color: $colorMainText;
+      box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.18);
     }
     &.active,&.current-menu-item {
       font-weight: bold;
@@ -85,7 +86,13 @@ footer {
   .blockImg {
     display: flex;
     justify-content: center;
-    min-height: 280px;
+    text-align: center;
+    height: 280px;
+    padding: 5px;
+    padding-top: 10px;
+    img {
+      height: 100%;
+    }
   }
   .blockText {
     text-align: center;
@@ -99,4 +106,8 @@ footer {
     }
 
   }
+}
+section.carusel {
+  max-width: 1920px;
+  margin: 0 auto;
 }

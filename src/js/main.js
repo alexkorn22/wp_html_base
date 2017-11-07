@@ -10,6 +10,10 @@ $( document ).ready(function() {
             self.toggleClass('borderBottom');
         });
     })
+    $("#fixedCategoryBlock").sticky({
+        topSpacing: 10,
+        bottomSpacing : 105
+    });
     caruselProductImage();
 });
 
@@ -19,7 +23,8 @@ function caruselProductImage() {
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        infinite: true,
+        infinite: false,
+        swipe: false,
         asNavFor: '.caruselThumb'
     });
     $('.caruselThumb').slick({
@@ -28,9 +33,9 @@ function caruselProductImage() {
         arrows: true,
         asNavFor: '.caruselImage',
         dots: false,
-        centerMode: true,
+        centerMode: false,
         focusOnSelect: true,
-        infinite: true,
+        infinite: false,
     });
 }
 

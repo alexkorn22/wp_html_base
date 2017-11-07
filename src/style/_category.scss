@@ -2,6 +2,7 @@ $borderRadius : 12px;
 .categoryText {
   background-color: #eeeeee;
   padding:30px 0;
+  padding-top: 0;
   margin:10px 0;
   .title h1{
     font-size:24px;
@@ -80,11 +81,17 @@ $borderRadius : 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 180px;
+    height: 220px;
+    padding: 5px;
+    padding-top: 10px;
+    img {
+      height: 100%;
+    }
   }
   &__text {
     text-align: center;
     padding-bottom: 10px;
+    min-height: 120px;
     &__title{
       font-size: 20px;
       font-weight:bold;

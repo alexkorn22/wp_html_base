@@ -83,6 +83,14 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  .mainContacts {
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .logo {
+    text-align: center;
+  }
   .header {
     .navbar-collapse {
       padding-right: 15px;
@@ -107,14 +115,6 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-  .mainContacts {
-    font-size: 14px;
-    padding-top: 10px;
-    text-align: center;
-  }
-  .logo {
-    text-align: center;
-  }
   .blockProduct {
     &__detail {
       .nav-tabs {
@@ -127,6 +127,14 @@
           }
         }
       }
+    }
+  }
+  .blockProductIv {
+    .title {
+      font-size: 20px;
+    }
+    h1 {
+      font-size: 20px;
     }
   }
 }
