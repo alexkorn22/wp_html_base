@@ -6,13 +6,28 @@
 @import "product";
 @import "product1";
 body {
-  background: white url("../img/bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  //background: white url("../img/bg.png");
+  //background-size: 100% 100%;
+  //background-repeat: no-repeat;
   font-family: $font;
 }
 .content {
   min-height: 81vh;
+}
+.page {
+  .gallery {
+    .psgal {
+      figure {
+        &:hover {
+          border: 4px solid $colorMainText;
+          padding: 0;
+        }
+        figcaption {
+          display: none;
+        }
+      }
+    }
+  }
 }
 //media
 @import "media";

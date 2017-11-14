@@ -31,8 +31,6 @@
   }
 }
 footer {
-  background: white;
-  padding:20px 0;
   .nav {
     font-size: 20px;
   }
@@ -45,13 +43,21 @@ footer {
   font-size: 22px;
   color: $colorMainText;
   text-align: right;
+  a {
+    color: $colorMainText;
+    &:focus,&:hover{
+      outline: none;
+      text-decoration: none;
+    }
+  }
 }
 .mainDescription {
   margin-top: 20px;
   .blockMainDesc {
     background: white url("../img/bg_main_desc.jpg");
     min-height: 400px;
-    padding:60px 0;
+    padding:40px 0;
+    margin-bottom: 5px;
   }
   p {
     font-size: 21px;
@@ -110,4 +116,18 @@ footer {
 section.carusel {
   max-width: 1920px;
   margin: 0 auto;
+}
+.kama_breadcrumbs {
+  .kb_sep {
+    margin: 0 5px;
+    font-weight: bold;
+  }
+  a {
+    text-decoration: underline;
+    color: #333;
+    &:hover {
+      color: $colorMainText;
+    }
+  }
+
 }
